@@ -13,7 +13,7 @@ struct User {
     let message: String
     
     init?(data:Data) {
-        guard let obj = try? JSONSerialization.jsonObject(with: data, options: []) as? [String:Any] else {
+        guard let obj = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] else {
             return nil
         }
         guard let name = obj? ["name"] as? String else {
@@ -25,6 +25,5 @@ struct User {
         
         self.name = name
         self.message = message
-        
     }
 }
