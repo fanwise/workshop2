@@ -10,8 +10,6 @@ import Foundation
 
 struct UserRequest: Request {
     let name: String
-    
-    let host = "https://api.onevcat.com"
     var path: String {
         return "/users/\(name)"
     }

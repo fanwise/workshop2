@@ -21,7 +21,7 @@ class ViewController: UIViewController {
 
     func sendHttpRequest(){
         let request = UserRequest(name: "onevcat")
-        request.send { user in
+        URLSessionClient().send(request) { user in
             if let user = user {
                 print("\(user.message) from \(user.name)")
             }

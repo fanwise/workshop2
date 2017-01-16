@@ -1,5 +1,5 @@
 //
-//  RequestExtension.swift
+//  UserSessionClient.swift
 //  workshop2
 //
 //  Created by Wei Fan on 1/16/17.
@@ -8,15 +8,17 @@
 
 import Foundation
 
-extension Request {
-    func send(handler: @escaping (Response?) -> Void) {
-        let url = URL(string: host.appending(path))!
+struct URLSessionClient: Client {
+    let host = "https://api.onevcat.com"
+    
+    func send<T: Request>(_ r: T, handler: @escaping (T.Response?) -> Void) {
+        let url = URL(string: host.appending(r.path))!
         var request = URLRequest(url: url)
-        request.httpMethod = method.rawValue
+        request.httpMethod = r.method.rawValue
         
         let task = URLSession.shared.dataTask(with: request) {
             data, _, error in
-            if let data = data, let res = self.parse(data: data) {
+            if let data = data, let res = r.parse(data: data) {
                 DispatchQueue.main.async { handler(res) }
             } else {
                 DispatchQueue.main.async { handler(nil) }
