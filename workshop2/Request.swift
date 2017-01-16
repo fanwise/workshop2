@@ -19,6 +19,5 @@ protocol Request {
     var method: HTTPMethod { get }
     var parameter: [String: Any] { get }
     
-    associatedtype Response
-    func parse(data: Data) -> Response?
+    associatedtype Response: Decodable
 }

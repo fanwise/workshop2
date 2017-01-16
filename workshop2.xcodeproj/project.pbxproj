@@ -19,6 +19,8 @@
 		2E03444E1E2C72670010AC04 /* UserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E03444D1E2C72670010AC04 /* UserRequest.swift */; };
 		2E0344521E2C96300010AC04 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0344511E2C96300010AC04 /* Client.swift */; };
 		2E0344541E2C97410010AC04 /* UserSessionClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0344531E2C97410010AC04 /* UserSessionClient.swift */; };
+		2E0344571E2C9E580010AC04 /* Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0344561E2C9E580010AC04 /* Decodable.swift */; };
+		2E0344591E2C9F090010AC04 /* UserExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0344581E2C9F090010AC04 /* UserExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		2E03444D1E2C72670010AC04 /* UserRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRequest.swift; sourceTree = "<group>"; };
 		2E0344511E2C96300010AC04 /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		2E0344531E2C97410010AC04 /* UserSessionClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSessionClient.swift; sourceTree = "<group>"; };
+		2E0344561E2C9E580010AC04 /* Decodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Decodable.swift; sourceTree = "<group>"; };
+		2E0344581E2C9F090010AC04 /* UserExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserExtension.swift; path = ../UserExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,10 +144,12 @@
 			isa = PBXGroup;
 			children = (
 				2E0344491E2C66CD0010AC04 /* User.swift */,
+				2E0344581E2C9F090010AC04 /* UserExtension.swift */,
 				2E03444B1E2C71850010AC04 /* Request.swift */,
 				2E03444D1E2C72670010AC04 /* UserRequest.swift */,
 				2E0344511E2C96300010AC04 /* Client.swift */,
 				2E0344531E2C97410010AC04 /* UserSessionClient.swift */,
+				2E0344561E2C9E580010AC04 /* Decodable.swift */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -288,8 +294,10 @@
 				2E03441E1E2C5C1B0010AC04 /* ViewController.swift in Sources */,
 				2E0344521E2C96300010AC04 /* Client.swift in Sources */,
 				2E0344541E2C97410010AC04 /* UserSessionClient.swift in Sources */,
+				2E0344591E2C9F090010AC04 /* UserExtension.swift in Sources */,
 				2E03444C1E2C71850010AC04 /* Request.swift in Sources */,
 				2E03441C1E2C5C1B0010AC04 /* AppDelegate.swift in Sources */,
+				2E0344571E2C9E580010AC04 /* Decodable.swift in Sources */,
 				2E03444E1E2C72670010AC04 /* UserRequest.swift in Sources */,
 				2E03444A1E2C66CD0010AC04 /* User.swift in Sources */,
 			);

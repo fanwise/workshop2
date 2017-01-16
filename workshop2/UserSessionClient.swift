@@ -18,7 +18,7 @@ struct URLSessionClient: Client {
         
         let task = URLSession.shared.dataTask(with: request) {
             data, _, error in
-            if let data = data, let res = r.parse(data: data) {
+            if let data = data, let res = T.Response.parse(data: data) {
                 DispatchQueue.main.async { handler(res) }
             } else {
                 DispatchQueue.main.async { handler(nil) }
