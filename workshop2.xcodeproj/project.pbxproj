@@ -16,6 +16,8 @@
 		2E03443C1E2C5C1B0010AC04 /* workshop2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E03443B1E2C5C1B0010AC04 /* workshop2UITests.swift */; };
 		2E03444A1E2C66CD0010AC04 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0344491E2C66CD0010AC04 /* User.swift */; };
 		2E03444C1E2C71850010AC04 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E03444B1E2C71850010AC04 /* Request.swift */; };
+		2E03444E1E2C72670010AC04 /* UserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E03444D1E2C72670010AC04 /* UserRequest.swift */; };
+		2E0344501E2C72A90010AC04 /* RequestExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E03444F1E2C72A90010AC04 /* RequestExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		2E03443D1E2C5C1B0010AC04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E0344491E2C66CD0010AC04 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		2E03444B1E2C71850010AC04 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		2E03444D1E2C72670010AC04 /* UserRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRequest.swift; sourceTree = "<group>"; };
+		2E03444F1E2C72A90010AC04 /* RequestExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				2E0344271E2C5C1B0010AC04 /* Info.plist */,
 				2E0344491E2C66CD0010AC04 /* User.swift */,
 				2E03444B1E2C71850010AC04 /* Request.swift */,
+				2E03444D1E2C72670010AC04 /* UserRequest.swift */,
+				2E03444F1E2C72A90010AC04 /* RequestExtension.swift */,
 			);
 			path = workshop2;
 			sourceTree = "<group>";
@@ -269,8 +275,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E03441E1E2C5C1B0010AC04 /* ViewController.swift in Sources */,
+				2E0344501E2C72A90010AC04 /* RequestExtension.swift in Sources */,
 				2E03444C1E2C71850010AC04 /* Request.swift in Sources */,
 				2E03441C1E2C5C1B0010AC04 /* AppDelegate.swift in Sources */,
+				2E03444E1E2C72670010AC04 /* UserRequest.swift in Sources */,
 				2E03444A1E2C66CD0010AC04 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

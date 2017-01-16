@@ -12,12 +12,21 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        sendHttpRequest()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
 
+    func sendHttpRequest(){
+        let request = UserRequest(name: "onevcat")
+        request.send { user in
+            if let user = user {
+                print("\(user.message) from \(user.name)")
+            }
+        }
+    }
 
 }
 
